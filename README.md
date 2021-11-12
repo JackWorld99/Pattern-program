@@ -35,5 +35,5 @@ __________         __    __                        __________                   
 
 ```
 
-#### [Demo link:](https://jackworld99.github.io/Pattern-program/pattern.html)
+#### [Demo](https://jackworld99.github.io/Pattern-program/pattern.html "Show pattern.html")
 
