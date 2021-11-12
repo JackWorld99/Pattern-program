@@ -5,11 +5,310 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patttern program</title>
+    <title>Pattern program</title>
+    <style>
+        * {
+            background-color: #343b41;
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
-    <script></script>
+    <script>
+        var star = 5;
+
+        document.write('1. <br>');
+
+        for (let i = 0; i <= star; i++) {
+            for (let k = star - i; k > 0; k--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let j = 0; j < i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<br>2. <br><br>');
+
+        for (let i = 0; i < star; i++) {
+            for (let j = 0; j <= i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<br>3. <br><br>');
+
+        for (let i = star; i >= 0; i--) {
+            for (let j = 0; j < i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        // for (let i = 0; i <= star; i++) {
+        //     for (let k = star - i; k > 0; k--) {
+        //         document.write('*&nbsp;');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        document.write('<br>4. <br><br>');
+
+        for (let i = 0; i <= star; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = star - i; k > 0; k--) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<br>5. <br><br>');
+
+        let a = 1;
+
+        for (let i = 0; i < star; i++) {
+            for (let j = star - 1; j > i; j--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = 0; k < i + a; k++) {
+                document.write('*&nbsp;');
+            }
+            a++;
+            document.write('<br>');
+        }
+
+        // for (i = 0; i <= star; i++) {
+        //     for (j = 0; j < star - i; j++) {
+        //         document.write('&nbsp;&nbsp;&nbsp;');
+        //     }
+        //     for (k = 0; k < (2 * i - 1); k++) {
+        //         document.write('*&nbsp;');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        document.write('<br>6. <br><br>');
+
+        for (let i = star; i > 0; i--) {
+            for (let j = star - 1; j > i - 1; j--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = (i + (i - 1)); k > 0; k--) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        // let b = 1;
+
+        // for (let i = star; i >= 1; i--) {
+
+        //     for (let j = 1; j < b; j++) {
+        //         document.write('&nbsp;&nbsp;&nbsp;');
+        //     }
+
+        //     for (let k = 1; k <= (2 * i - 1); k++) {
+        //         document.write('*&nbsp;');
+        //     }
+        //     b++;
+        //     document.write('<br>');
+        // }
+
+        document.write('<br>7. <br><br>');
+
+        for (let i = 0; i < star; i++) {
+            for (let j = 0; j <= i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+        for (let i = star; i >= 0; i--) {
+            for (let j = 1; j < i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<br>8. <br><br>');
+
+        for (let i = 0; i <= star; i++) {
+            for (let k = star - i; k > 0; k--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let j = 0; j < i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+        for (let i = 1; i <= star; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = star - i; k > 0; k--) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<br>9. <br><br>');
+
+        let c = 1;
+
+        for (let i = 0; i < star - 1; i++) {
+            for (let j = star - 2; j >= i; j--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = 0; k < i + c; k++) {
+                document.write('*&nbsp;');
+            }
+            c++;
+            document.write('<br>');
+        }
+        for (let i = star; i > 0; i--) {
+            for (let j = star - 1; j > i - 1; j--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = (i + (i - 1)); k > 0; k--) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<br>10. <br><br>');
+
+        let x = 1;
+
+        for (let i = 0; i <= star; i++) {
+            for (let j = star; j > i; j--) {
+                document.write('*&nbsp;');
+            }
+            for (let k = 1; k < i + x; k++) {
+                if (i == star) {
+                    continue
+                }
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let l = star; l > i; l--) {
+                document.write('*&nbsp;');
+            }
+            x++;
+            if (i < star) {
+                document.write('<br>');
+            }
+        }
+
+        for (let i = 1; i < star; i++) {
+            for (let j = 0; j <= i; j++) {
+                document.write('*&nbsp;');
+            }
+            for (let k = star - i; k > i - 3; k--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+
+            for (let j = 0; j <= i; j++) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        // for (var i = 1; i <= star; i++) {
+        //     for (var j = i; j <= star; j++) {
+        //         document.write("*&nbsp;");
+        //     }
+
+        //     for (var j = 1; j <= (2 * i - 2); j++) {
+        //         document.write("&nbsp;&nbsp;&nbsp;");
+        //     }
+
+        //     for (var j = i; j <= star; j++) {
+        //         document.write("*&nbsp;");
+        //     }
+
+        //     document.write("<br>");
+        // }
+
+        // for (var i = 1; i <= star; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         document.write("*&nbsp;");
+        //     }
+
+        //     for (var j = (2 * i - 2); j < (2 * star - 2); j++) {
+        //         document.write("&nbsp;&nbsp;&nbsp;");
+        //     }
+
+        //     for (var j = 1; j <= i; j++) {
+        //         document.write("*&nbsp;");
+        //     }
+
+        //     document.write("<br>");
+        // }
+
+        document.write('<br>11. <br><br>');
+
+        let y = 1;
+
+        for (let z = 0; z < 2 * star + 1; z++) {
+            document.write('*&nbsp;');
+        }
+        document.write('<br>');
+
+        for (let i = 0; i <= star; i++) {
+            for (let j = star; j > i; j--) {
+                document.write('*&nbsp;');
+            }
+            for (let k = 0; k < i + y; k++) {
+                if (i == star) {
+                    continue
+                }
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let l = star; l > i; l--) {
+                document.write('*&nbsp;');
+            }
+            y++;
+            if (i < star) {
+                document.write('<br>');
+            }
+        }
+
+        for (let i = star - 1; i > 0; i--) {
+            for (let j = star; j > i - 1; j--) {
+                document.write('*&nbsp;');
+            }
+            for (let k = (i + (i - 1)); k > 0; k--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let l = star; l > i - 1; l--) {
+                document.write('*&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        for (let m = 0; m < 2 * star + 1; m++) {
+            document.write('*&nbsp;');
+        }
+
+        // for (let i = 1; i < star; i++) {
+        //     for (let j = 0; j <= i; j++) {
+        //         document.write('*&nbsp;');
+        //     }
+        //     for (let k = star - i; k > i - 3; k--) {
+        //         document.write('#&nbsp;');
+        //     }
+
+        //     for (let j = 0; j <= i; j++) {
+        //         document.write('*&nbsp;');
+        //     }
+        //     document.write('<br>');
+        // }
+
+
+    </script>
 </body>
 
 </html>
